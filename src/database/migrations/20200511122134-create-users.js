@@ -17,8 +17,12 @@ module.exports = {
         allowNull: false,
       },
       password_hash: {
-        type: Sequelize.STIRNG,
+        type: Sequelize.STRING,
         allowNull: false,
+      },
+      first_auth: {
+        type: Sequelize.DATE,
+        allowNull: true,
       },
       created_at: {
         type: Sequelize.DATE,
